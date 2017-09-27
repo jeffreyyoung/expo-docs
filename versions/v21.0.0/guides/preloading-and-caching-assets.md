@@ -53,7 +53,7 @@ class AppContainer extends React.Component {
       return (
         <AppLoading
           startAsync={this._loadAssetsAsync}
-          onFinish={() => this.setState({ isReady: true })}
+          onFinish={() => this.setState({ appIsReady: true })}
           onError={console.warn}
         />
       );
